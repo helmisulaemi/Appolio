@@ -674,3 +674,43 @@ img {
         -o-transform: translate(-1px, 0px) rotate(180deg);
     } 
 }
+
+/*================================= 
+* 4. Stats Area
+==================================*/
+
+.counter-item:not(:last-child) {
+    margin-right: 75px;
+}
+
+.counter-item h2 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 46px;
+}
+
+.counter-item span {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.brand-slide {
+    /* width: 33.33%; */
+    border: 1px solid #E1E1E1;
+    padding: 20px 45px;
+    height: 90px;
+    border-radius: 44px;
+    -webkit-border-radius: 44px;
+    -moz-border-radius: 44px;
+    -ms-border-radius: 44px;
+    -o-border-radius: 44px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-slide img {
+    width: 82px;
+    height: 25px;
+}
