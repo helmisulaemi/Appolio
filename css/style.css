@@ -15,10 +15,6 @@ body{
     color: var(--black);
 }
 
-span {
-    font-family: "Inter", Sans-serif;
-}
-
 img {
     height: auto;
     max-width: 100%;
@@ -39,6 +35,24 @@ img {
 }
 
 .btn-outline:hover {
+    background-color: var(--primary);
+    color: #F0F0F0;
+}
+
+.btn-rouded-outline {
+    padding: 19px;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--black);
+    font-family: "Inter", Sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19.5px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.btn-rouded-outline:hover {
     background-color: var(--primary);
     color: #F0F0F0;
 }
@@ -713,4 +727,155 @@ img {
 .brand-slide img {
     width: 82px;
     height: 25px;
+}
+
+/*================================= 
+* 5. Feature Area
+==================================*/
+
+.feature {
+    margin-top: 80px;
+}
+
+.feature .feature-subtitle {
+    font-family: "Inter", Sans-serif;
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.feature .feature-subtitle span {
+    color: #EC0D0D;
+}
+
+.feature .feature-title {
+    font-family: "Quicksand", Sans-serif;
+    font-size: 42px;
+    color: var(--black);
+    font-weight: 600;
+    line-height: 61px;
+    position: relative;
+}
+
+.feature .feature-title span {
+    position: relative;
+}
+
+.feature .feature-title span::before {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    height: 6px;
+    width: 100%;
+    background-color: rgba(255, 94, 44, 0.7);
+    content: "";
+    z-index: -1;
+    -webkit-animation: ltr 3s infinite;
+    animation: ltr 3s infinite;
+}
+
+.feature .feature-text {
+    padding: 25px 70px;
+    background-color: #FBFAFE;
+    border: 1px solid #7277A1;
+    border-radius: 73px;
+    -webkit-border-radius: 73px;
+    -moz-border-radius: 73px;
+    -ms-border-radius: 73px;
+    -o-border-radius: 73px;
+    max-width: 488px;
+}
+
+.feature .feature-text p {
+    font-family: "Inter", Sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #677294;
+    margin-bottom: 0;
+}
+
+.card-custom {
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+    border: 1px solid transparent;
+    padding: 50px 30px 80px 30px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+}
+
+.card-custom .icon {
+    display: block;
+    margin-bottom: 10px;
+    height: 70px;
+}
+
+.card-custom h3 {
+    font-size: 23px;
+    position: relative;
+    margin-bottom: 30px;
+    display: inline-block;
+    color: #101212;
+    font-family: "Quicksand", Sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 27px;
+}
+
+.card-custom h3::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(95, 45, 237, 0.3);
+    content: "";
+}
+
+.card-custom:hover {
+    border-color: #5F2DED;
+    box-shadow: 0px 5px 35px rgba(34, 30, 30, 0.13);
+    opacity: 1;
+}
+
+.card-custom::before {
+    position: absolute;
+    bottom: -2px;
+    right: 64px;
+    background-image: url(../img/pseudo.png);
+    content: "";
+    width: 45px;
+    height: 30px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.card-custom:hover::before {
+    opacity: 1;
+}
+
+.card-custom p {
+    font-family: "Inter", Sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #677294;
+    text-align: justify;
+}
+
+/*================================= 
+* 6. WCA Area
+==================================*/
+
+.wca {
+    padding-top: 120px;
 }
